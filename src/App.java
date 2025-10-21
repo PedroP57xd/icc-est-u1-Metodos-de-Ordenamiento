@@ -1,8 +1,13 @@
 public class App {
     public static void main(String[] args) throws Exception {
         int[] numeros = { 10, 0, -5, 5, 15, 2 };
-        SortBubble sortBubble=new SortBubble();
+        int[] numeros2 = { 10, 0, -5, 5, 15, 2 };
+        
         System.out.println("\n     Metodos de Ordenamiento");
+
+        //BubbleSort Mejorado
+        SortBubble sortBubble=new SortBubble();
+        System.out.println("Bubble Sort Mejorado");
         System.out.println("\nArray Original:");
         sortBubble.printArray(numeros);
         System.out.println("\n\nOrdenado Ascendentemente:");
@@ -11,5 +16,17 @@ public class App {
         System.out.println("\n\nOrdenado Descendentemente:");
         sortBubble.sortDescendente(numeros);
         sortBubble.printArray(numeros);
+
+        //SelectionSort
+        SortSelection sortSelection = new SortSelection();
+        System.out.println("     \n\n\nSelection Sort");
+        System.out.println("\nArray Original");
+        sortSelection.printArray(numeros2);
+        System.out.println("\n\nArray Ordenado Ascendentemente");
+        sortSelection.selectionSortAsce(numeros2);
+        sortSelection.printArray(numeros2);
+        System.out.println("\n\nArray Ordenado Descendentemente");
+        sortSelection.selectionSortDesce(numeros2);
+        sortSelection.printArray(numeros2);
     }
 }

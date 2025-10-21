@@ -18,7 +18,7 @@ public class SortBubble {
                     swapped = true;
                 }
             }
-            if (swapped) {
+            if (!swapped) {
                 break;
             }
         }
@@ -41,7 +41,7 @@ public class SortBubble {
                     swapped = true;
                 }
             }
-            if (swapped) {
+            if (!swapped) {
                 break;
             }
         }
@@ -56,7 +56,6 @@ public class SortBubble {
             if (i < numeros.length-1) {
                 System.out.print(",");
             }
-
         }
         System.out.print("]");
     }
