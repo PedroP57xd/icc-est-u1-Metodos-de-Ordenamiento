@@ -18,8 +18,9 @@ public class App {
         sortBubble.printArray(numeros);
 
         //SelectionSort
+        System.out.println("\n\nEstudiante:Pedro Panjón\n");
         SortSelection sortSelection = new SortSelection();
-        System.out.println("     \n\n\nSelection Sort");
+        System.out.println("     \nSelection Sort");
         System.out.println("\nArray Original");
         sortSelection.printArray(numeros2);
         System.out.println("\n\nArray Ordenado Ascendentemente");
